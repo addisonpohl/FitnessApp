@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 # end
 namespace :api do
   get "/fitness_trackers" => "fitness_trackers#index"
-
+  get "/fitness_trackers/:id" => "fitness_trackers#show"
   end
 
 
