@@ -1,0 +1,2 @@
+class FitnessTracker < ApplicationRecord
+end
