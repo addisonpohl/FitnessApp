@@ -5,4 +5,10 @@ Rails.application.routes.draw do
 # namespace :api do
 # get "/photos" => "photos#index"
 # end
+namespace :api do
+  get "/fitness_trackers" => "fitness_trackers#index"
+
+  end
+
+
 end
