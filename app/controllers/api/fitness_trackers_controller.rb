@@ -27,4 +27,10 @@ class Api::FitnessTrackersController < ApplicationController
     @fitness_tracker.save
     render "show.json.jbuilder"
   end
+
+  def delete
+    @fitness_tracker = FitnessTracker.find(params[:id])
+    @fitness_tracker.destroy
+    render json: {message: "Entry Deleted"}
+  end
 end
