@@ -9,6 +9,7 @@ namespace :api do
   get "/fitness_trackers" => "fitness_trackers#index"
   get "/fitness_trackers/:id" => "fitness_trackers#show"
   post "fitness_trackers" => "fitness_trackers#create"
+  patch "/fitness_trackers/:id" => "fitness_trackers#update"
   end
 
 
