@@ -11,5 +11,7 @@ namespace :api do
   post "fitness_trackers" => "fitness_trackers#create"
   patch "/fitness_trackers/:id" => "fitness_trackers#update"
   delete "/fitness_trackers/:id" => "fitness_trackers#delete"
+
+  post "/users" => "users#create"
   end
 end
