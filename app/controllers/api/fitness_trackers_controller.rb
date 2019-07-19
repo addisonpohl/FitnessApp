@@ -6,6 +6,8 @@ class Api::FitnessTrackersController < ApplicationController
   end
 
   def show
+    p 'current_user'
+    p current_user
     @fitness_tracker = FitnessTracker.find_by(id: params[:id])
     render "show.json.jbuilder"
   end
