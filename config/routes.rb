@@ -13,5 +13,7 @@ namespace :api do
   delete "/fitness_trackers/:id" => "fitness_trackers#delete"
 
   post "/users" => "users#create"
+
+  post "/sessions" => "sessions#create"
   end
 end
